@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    /* background-image: url('dashbord_background.jpg'); */
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+header, nav, section, footer {
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    /* color: #333; */
+    color: white;
+    font-weight: bolder;
+    background-color: #25242420;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #666;
+}
+
+/* Header Styles */
+header {
+    background-color: #181563;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+/* Content Styles */
+.content {
+    margin: 20px auto;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
+}
+
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #181563;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Test Styles */
+.content h2 {
+    color: #181563;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+.content ul li a {
+    color: #181563;
+    font-weight: bold;
+}
+
+.content ul li a:hover {
+    color: #181563;
+}
+
+.test-button {
+    background-color: #181563;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.test-button:hover {
+    background-color: #181563;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    background-color: #615dd0;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #68678e;
+}
+
+.button-secondary {
+    background-color: #008CBA;
+}
+
+.button-secondary:hover {
+    background-color: #181563;
+}
+
+.button-danger {
+    background-color: #f44336;
+}
+
+.button-danger:hover {
+    background-color: #d32f2f;
+}

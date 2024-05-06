@@ -1,0 +1,27 @@
+/* CSS rules for showing/hiding video categories based on highest quiz score */
+.category {
+    display: none;
+}
+
+/* .category.frontend {
+    display: block;
+}
+
+.category.backend {
+    display: block;
+}
+
+.category.fullstack {
+    display: block;
+} */
+
+.frontend {
+    display: block;
+}
+
+.backend {
+    display: block;
+}
+.fullstack {
+    display: block;
+}
