@@ -1,39 +1,86 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const submitButton = document.querySelector("button[type='submit']");
-    submitButton.addEventListener("click", function() {
-        // Collect user answers
-        const userAnswers = [];
-        const questions = document.querySelectorAll("li");
-        questions.forEach(function(question) {
-            const selectedAnswer = question.querySelector("input:checked");
-            if (selectedAnswer) {
-                userAnswers.push(selectedAnswer.parentElement.textContent.trim().replace(/\s*\(.*?\)\s*/g, ''));
-            }
-        });
+document.addEventListener("DOMContentLoaded", async function () {
+  const submitButton = document.querySelector("button[type='submit']");
+  const questionsContainer = document.getElementById("quiz-questions");
 
-        // Define correct answers
-        const correctAnswers = [
-            "B) Create, Retrieve, Update, Delete", // Question 1
-            "C) HTML", // Question 2
-            "C) SQL", // Question 3
-            "B) To connect front-end and back-end systems", // Question 4
-            "D) Angular", // Question 5
-            "A) GET", // Question 6
-            "A) Model, View, Control", // Question 7
-            "C) Express", // Question 8
-            "B) JSON Web Token", // Question 9
-            "A) The ability to handle a large number of users or requests" // Question 10
-        ];
+  function decodeHTMLEntities(text) {
+    const textArea = document.createElement("textarea");
+    textArea.innerHTML = text;
+    return textArea.value;
+  }
 
-        // Compare user answers with correct answers and calculate score
-        let score = 0;
-        for (let i = 0; i < correctAnswers.length; i++) {
-            if (userAnswers[i] === correctAnswers[i]) {
-                score++;
-            }
-        }
+  try {
+    console.log("Fetching quiz questions...");
+    const response = await fetch(
+      "http://localhost:3000/api/quizQuestions?category=Backend%20Development"
+    );
+    console.log("Response status:", response.status);
 
-        // Alert the result
-        alert(`Your score: ${score}/${correctAnswers.length}`);
+    const quizQuestions = await response.json();
+    console.log("Fetched questions:", quizQuestions);
+
+    if (!quizQuestions || quizQuestions.length === 0) {
+      throw new Error("No questions received from server");
+    }
+
+    // Render quiz questions
+    quizQuestions.forEach((question, index) => {
+      console.log(`Processing question ${index + 1}:`, question);
+
+      if (!question.question || !question.options) {
+        console.warn(`Skipping invalid question at index ${index}:`, question);
+        return;
+      }
+
+      const questionElement = document.createElement("li");
+      const decodedOptions = question.options.map((opt) =>
+        decodeHTMLEntities(opt)
+      );
+
+      questionElement.innerHTML = `
+        <p>${index + 1}. ${decodeHTMLEntities(question.question)}</p>
+        ${decodedOptions
+          .map(
+            (option) => `
+              <label>
+                <input type="radio" name="q${index + 1}" value="${option}">
+                ${option}
+              </label><br>
+            `
+          )
+          .join("")}
+      `;
+      questionsContainer.appendChild(questionElement);
+      console.log(`Question ${index + 1} rendered successfully`);
     });
+
+    submitButton.addEventListener("click", function () {
+      const userAnswers = [];
+      const questions = document.querySelectorAll("li");
+
+      questions.forEach(function (question, index) {
+        const selectedAnswer = question.querySelector("input:checked");
+        if (selectedAnswer) {
+          userAnswers.push(selectedAnswer.value);
+        }
+      });
+
+      let correctCount = 0;
+      userAnswers.forEach(function (answer, index) {
+        const correctAnswer = decodeHTMLEntities(
+          quizQuestions[index].correctAnswer
+        );
+        if (answer === correctAnswer) {
+          correctCount++;
+        }
+      });
+
+      alert(
+        `You have submitted the quiz. Your score is ${correctCount}/${quizQuestions.length}.`
+      );
+    });
+  } catch (error) {
+    console.error("Error fetching/rendering questions:", error);
+    questionsContainer.innerHTML =
+      "<p>Error loading quiz questions. Please try again.</p>";
+  }
 });

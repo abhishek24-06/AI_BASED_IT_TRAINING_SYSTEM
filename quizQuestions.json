@@ -1,0 +1,484 @@
+[
+  {
+    "category": "Frontend Development",
+    "question": "Which language is used for structuring web pages?",
+    "options": ["JavaScript", "Python", "HTML", "Java"],
+    "correctAnswer": "HTML"
+  },
+  {
+    "category": "Frontend Development",
+    "question": "What does CSS stand for?",
+    "options": [
+      "Computer Styling Sheets",
+      "Cascading Style Sheets",
+      "Creative Style Syntax",
+      "Colorful Style System"
+    ],
+    "correctAnswer": "Cascading Style Sheets"
+  },
+  {
+    "category": "Frontend Development",
+    "question": "Which JavaScript framework is developed by Facebook?",
+    "options": ["Angular", "Vue.js", "React", "Ember.js"],
+    "correctAnswer": "React"
+  },
+  {
+    "category": "Frontend Development",
+    "question": "Which of the following is NOT a valid CSS unit?",
+    "options": ["px", "em", "cm", "pic"],
+    "correctAnswer": "pic"
+  },
+  {
+    "category": "Frontend Development",
+    "question": "What is the default position property of an HTML element?",
+    "options": ["static", "relative", "absolute", "fixed"],
+    "correctAnswer": "static"
+  },
+  {
+    "category": "Frontend Development",
+    "question": "Which HTML tag is used to link an external CSS file?",
+    "options": ["&lt;css&gt;", "&lt;link&gt;", "&lt;stylesheet&gt;", "&lt;style&gt;"],
+    "correctAnswer": "&lt;link&gt;"
+  },
+  {
+    "category": "Frontend Development",
+    "question": "What is the correct way to apply an external JavaScript file in HTML?",
+    "options": [
+      "&lt;script src='app.js'&gt;&lt;/script&gt;",
+      "&lt;js file='app.js'&gt;&lt;/js&gt;",
+      "&lt;javascript link='app.js'&gt;&lt;/javascript&gt;",
+      "&lt;script href='app.js'&gt;&lt;/script&gt;"
+    ],
+    "correctAnswer": "&lt;script src='app.js'&gt;&lt;/script&gt;"
+  },
+  {
+    "category": "Frontend Development",
+    "question": "What is the correct HTML tag for creating a hyperlink?",
+    "options": ["&lt;hyperlink&gt;", "&lt;a&gt;", "&lt;hlink&gt;", "&lt;link&gt;"],
+    "correctAnswer": "&lt;a&gt;"
+  },
+  {
+    "category": "Frontend Development",
+    "question": "What does the 'Z' in Z-index in CSS represent?",
+    "options": ["Zoom", "Z-Transform", "Stacking Order", "Zone Alignment"],
+    "correctAnswer": "Stacking Order"
+  },
+  {
+    "category": "Frontend Development",
+    "question": "Which of the following is not a valid JavaScript data type?",
+    "options": ["Number", "String", "Object", "Float"],
+    "correctAnswer": "Float"
+  },
+  {
+    "category": "Frontend Development",
+    "question": "What is the correct way to declare a JavaScript function?",
+    "options": [
+      "def function myFunc() {}",
+      "function myFunc() {}",
+      "create function myFunc() {}",
+      "declare function myFunc() {}"
+    ],
+    "correctAnswer": "function myFunc() {}"
+  },
+  {
+    "category": "Frontend Development",
+    "question": "Which method is used to add an event listener in JavaScript?",
+    "options": [
+      "addListener()",
+      "onEvent()",
+      "attachEvent()",
+      "addEventListener()"
+    ],
+    "correctAnswer": "addEventListener()"
+  },
+  {
+    "category": "Frontend Development",
+    "question": "What is the latest version of JavaScript called?",
+    "options": ["ES6", "JS2020", "JSNext", "ESNext"],
+    "correctAnswer": "ESNext"
+  },
+  {
+    "category": "Frontend Development",
+    "question": "Which of the following is a pseudo-class in CSS?",
+    "options": ["::after", "#element", ".class", ":hover"],
+    "correctAnswer": ":hover"
+  },
+  {
+    "category": "Frontend Development",
+    "question": "What is the purpose of media queries in CSS?",
+    "options": [
+      "Styling console logs",
+      "Creating animations",
+      "Making designs responsive",
+      "Validating HTML"
+    ],
+    "correctAnswer": "Making designs responsive"
+  },
+  {
+    "category": "Frontend Development",
+    "question": "What does the &lt;canvas&gt; tag in HTML do?",
+    "options": [
+      "Creates a table",
+      "Renders 2D graphics",
+      "Links to external files",
+      "Embeds audio"
+    ],
+    "correctAnswer": "Renders 2D graphics"
+  },
+  {
+    "category": "Frontend Development",
+    "question": "Which tool is used to check errors in JavaScript?",
+    "options": [
+      "W3 Validator",
+      "Browser Console",
+      "PHP Debugger",
+      "CSS Linter"
+    ],
+    "correctAnswer": "Browser Console"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "What does Full Stack Development mean?",
+    "options": [
+      "Developing only the frontend of an application",
+      "Working on both frontend and backend parts of an application",
+      "Managing databases only",
+      "Writing test cases for software"
+    ],
+    "correctAnswer": "Working on both frontend and backend parts of an application"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "Which of the following is a frontend technology?",
+    "options": ["Node.js", "Express.js", "React.js", "MongoDB"],
+    "correctAnswer": "React.js"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "Which database type is commonly used in full-stack applications?",
+    "options": [
+      "Relational Databases (SQL)",
+      "NoSQL Databases",
+      "Both SQL and NoSQL",
+      "None of the above"
+    ],
+    "correctAnswer": "Both SQL and NoSQL"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "What is the role of Express.js in a full-stack application?",
+    "options": [
+      "Database management",
+      "Frontend UI framework",
+      "Backend web framework for Node.js",
+      "CSS styling tool"
+    ],
+    "correctAnswer": "Backend web framework for Node.js"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "Which of the following is NOT a JavaScript framework or library?",
+    "options": ["React", "Angular", "Django", "Vue.js"],
+    "correctAnswer": "Django"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "In a MERN stack, what does MERN stand for?",
+    "options": [
+      "MongoDB, Express, React, Node.js",
+      "MySQL, Express, React, Node.js",
+      "MongoDB, Electron, React, Node.js",
+      "MongoDB, Express, Redux, Node.js"
+    ],
+    "correctAnswer": "MongoDB, Express, React, Node.js"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "What is the main function of JWT (JSON Web Token) in full-stack applications?",
+    "options": [
+      "Encrypt data for secure transmission",
+      "Store and manage large media files",
+      "Authenticate and authorize users",
+      "Improve frontend performance"
+    ],
+    "correctAnswer": "Authenticate and authorize users"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "Which of these is a popular CSS framework used in frontend development?",
+    "options": ["Bootstrap", "Express", "Flask", "MongoDB"],
+    "correctAnswer": "Bootstrap"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "What does the useState hook in React do?",
+    "options": [
+      "Manages state in functional components",
+      "Handles HTTP requests",
+      "Creates a new route in the application",
+      "Manages database connections"
+    ],
+    "correctAnswer": "Manages state in functional components"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "Which HTTP method is used to send data to the server?",
+    "options": ["GET", "DELETE", "POST", "PUT"],
+    "correctAnswer": "POST"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "What is the role of CORS (Cross-Origin Resource Sharing) in full-stack applications?",
+    "options": [
+      "Prevent unauthorized database access",
+      "Allow or restrict cross-origin HTTP requests",
+      "Handle frontend routing",
+      "Manage API versioning"
+    ],
+    "correctAnswer": "Allow or restrict cross-origin HTTP requests"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "Which technology is used for backend development in a MEAN stack application?",
+    "options": ["Express.js", "Flask", "Laravel", "React.js"],
+    "correctAnswer": "Express.js"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "In Node.js, which module is used to build an HTTP server?",
+    "options": ["fs", "http", "os", "express"],
+    "correctAnswer": "http"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "What does CRUD stand for in database operations?",
+    "options": [
+      "Connect, Run, Update, Deploy",
+      "Create, Read, Update, Delete",
+      "Cache, Restore, Utilize, Develop",
+      "Copy, Retrieve, Upload, Delete"
+    ],
+    "correctAnswer": "Create, Read, Update, Delete"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "Which command is used to start a React.js project?",
+    "options": [
+      "node start react-app",
+      "npm create-react-app",
+      "npx create-react-app my-app",
+      "react start project"
+    ],
+    "correctAnswer": "npx create-react-app my-app"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "What is an ORM (Object-Relational Mapping) tool used in full-stack development?",
+    "options": [
+      "A tool that converts JavaScript into SQL",
+      "A database used in full-stack applications",
+      "A library that simplifies database operations using objects",
+      "A framework for UI development"
+    ],
+    "correctAnswer": "A library that simplifies database operations using objects"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "In MongoDB, what is a 'Document'?",
+    "options": [
+      "A collection of multiple databases",
+      "A single record stored as a JSON-like object",
+      "A table in a relational database",
+      "A programming interface for databases"
+    ],
+    "correctAnswer": "A single record stored as a JSON-like object"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "What is the purpose of Webpack in frontend development?",
+    "options": [
+      "Optimize and bundle frontend assets",
+      "Manage backend authentication",
+      "Handle SQL queries",
+      "Perform API testing"
+    ],
+    "correctAnswer": "Optimize and bundle frontend assets"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "What is the main difference between SQL and NoSQL databases?",
+    "options": [
+      "SQL stores data in structured tables, NoSQL uses flexible document-based storage",
+      "SQL is faster than NoSQL in all cases",
+      "NoSQL does not allow querying",
+      "SQL databases do not support transactions"
+    ],
+    "correctAnswer": "SQL stores data in structured tables, NoSQL uses flexible document-based storage"
+  },
+  {
+    "category": "Full Stack Development",
+    "question": "Which of the following is NOT a cloud computing platform for hosting full-stack applications?",
+    "options": ["AWS", "Firebase", "DigitalOcean", "VS Code"],
+    "correctAnswer": "VS Code"
+  },
+  {
+    "category": "Backend Development",
+    "question": "Which of the following is a backend programming language?",
+    "options": ["HTML", "CSS", "JavaScript", "Python"],
+    "correctAnswer": "Python"
+  },
+  {
+    "category": "Backend Development",
+    "question": "What does REST stand for in web development?",
+    "options": [
+      "Representational State Transfer",
+      "Remote Server Transmission",
+      "Real-time System Transfer",
+      "Recursive Encapsulation of Structured Text"
+    ],
+    "correctAnswer": "Representational State Transfer"
+  },
+  {
+    "category": "Backend Development",
+    "question": "Which database is NoSQL?",
+    "options": ["MySQL", "MongoDB", "PostgreSQL", "Oracle"],
+    "correctAnswer": "MongoDB"
+  },
+  {
+    "category": "Backend Development",
+    "question": "What is the default port for a MySQL database?",
+    "options": ["27017", "5432", "3306", "8080"],
+    "correctAnswer": "3306"
+  },
+  {
+    "category": "Backend Development",
+    "question": "In Node.js, which module is used to handle file system operations?",
+    "options": ["fs", "http", "express", "os"],
+    "correctAnswer": "fs"
+  },
+  {
+    "category": "Backend Development",
+    "question": "What is an API?",
+    "options": [
+      "Advanced Programming Interface",
+      "Application Programming Interface",
+      "Automated Program Integration",
+      "Asynchronous Programming Index"
+    ],
+    "correctAnswer": "Application Programming Interface"
+  },
+  {
+    "category": "Backend Development",
+    "question": "Which of the following is a backend framework?",
+    "options": ["React", "Flask", "Bootstrap", "jQuery"],
+    "correctAnswer": "Flask"
+  },
+  {
+    "category": "Backend Development",
+    "question": "Which command is used to install dependencies in Node.js?",
+    "options": ["npm install", "node install", "install npm", "node get"],
+    "correctAnswer": "npm install"
+  },
+  {
+    "category": "Backend Development",
+    "question": "What is the primary function of a backend in web development?",
+    "options": [
+      "Designing web pages",
+      "Handling server-side logic and database operations",
+      "Styling HTML elements",
+      "Creating animations"
+    ],
+    "correctAnswer": "Handling server-side logic and database operations"
+  },
+  {
+    "category": "Backend Development",
+    "question": "In SQL, which clause is used to filter records?",
+    "options": ["WHERE", "ORDER BY", "GROUP BY", "HAVING"],
+    "correctAnswer": "WHERE"
+  },
+  {
+    "category": "Backend Development",
+    "question": "What is the purpose of JWT (JSON Web Token)?",
+    "options": [
+      "Encrypting frontend data",
+      "Securing user authentication",
+      "Speeding up database queries",
+      "Managing CSS styles"
+    ],
+    "correctAnswer": "Securing user authentication"
+  },
+  {
+    "category": "Backend Development",
+    "question": "Which of these is a relational database?",
+    "options": ["MongoDB", "Firebase", "PostgreSQL", "Redis"],
+    "correctAnswer": "PostgreSQL"
+  },
+  {
+    "category": "Backend Development",
+    "question": "What is Express.js?",
+    "options": [
+      "A frontend framework",
+      "A Node.js framework for building web applications",
+      "A programming language",
+      "A database management tool"
+    ],
+    "correctAnswer": "A Node.js framework for building web applications"
+  },
+  {
+    "category": "Backend Development",
+    "question": "What does CRUD stand for?",
+    "options": [
+      "Create, Retrieve, Update, Delete",
+      "Connect, Read, Upload, Deploy",
+      "Configure, Run, Update, Develop",
+      "Cache, Restore, Utilize, Delete"
+    ],
+    "correctAnswer": "Create, Retrieve, Update, Delete"
+  },
+  {
+    "category": "Backend Development",
+    "question": "In Python, which framework is commonly used for backend development?",
+    "options": ["Django", "Vue.js", "Angular", "React"],
+    "correctAnswer": "Django"
+  },
+  {
+    "category": "Backend Development",
+    "question": "What is the role of middleware in backend development?",
+    "options": [
+      "Handle CSS styles",
+      "Process requests between client and server",
+      "Display frontend animations",
+      "Manage database indexing"
+    ],
+    "correctAnswer": "Process requests between client and server"
+  },
+  {
+    "category": "Backend Development",
+    "question": "Which HTTP method is used to update data on the server?",
+    "options": ["GET", "POST", "PUT", "DELETE"],
+    "correctAnswer": "PUT"
+  },
+  {
+    "category": "Backend Development",
+    "question": "In MongoDB, what is a 'collection'?",
+    "options": [
+      "A table equivalent in a relational database",
+      "A single document",
+      "A database schema",
+      "A set of stored procedures"
+    ],
+    "correctAnswer": "A table equivalent in a relational database"
+  },
+  {
+    "category": "Backend Development",
+    "question": "Which of these is a cloud computing platform?",
+    "options": ["VS Code", "AWS", "MySQL", "HTML"],
+    "correctAnswer": "AWS"
+  },
+  {
+    "category": "Backend Development",
+    "question": "Which file is used to define dependencies in a Node.js project?",
+    "options": ["index.js", "package.json", "server.js", "config.js"],
+    "correctAnswer": "package.json"
+  }
+]
