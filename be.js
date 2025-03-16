@@ -8,6 +8,13 @@ document.addEventListener("DOMContentLoaded", async function () {
     return textArea.value;
   }
 
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
   try {
     console.log("Fetching quiz questions...");
     const response = await fetch(
@@ -22,8 +29,12 @@ document.addEventListener("DOMContentLoaded", async function () {
       throw new Error("No questions received from server");
     }
 
+    // Shuffle the questions and select the first 10
+    shuffleArray(quizQuestions);
+    const selectedQuestions = quizQuestions.slice(0, 10);
+
     // Render quiz questions
-    quizQuestions.forEach((question, index) => {
+    selectedQuestions.forEach((question, index) => {
       console.log(`Processing question ${index + 1}:`, question);
 
       if (!question.question || !question.options) {
@@ -67,7 +78,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       let correctCount = 0;
       userAnswers.forEach(function (answer, index) {
         const correctAnswer = decodeHTMLEntities(
-          quizQuestions[index].correctAnswer
+          selectedQuestions[index].correctAnswer
         );
         if (answer === correctAnswer) {
           correctCount++;
@@ -75,7 +86,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       });
 
       alert(
-        `You have submitted the quiz. Your score is ${correctCount}/${quizQuestions.length}.`
+        `You have submitted the quiz. Your score is ${correctCount}/${selectedQuestions.length}.`
       );
     });
   } catch (error) {
