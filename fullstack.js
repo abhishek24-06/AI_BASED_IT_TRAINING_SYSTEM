@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", async function () {
   const submitButton = document.querySelector("button[type='submit']");
   const questionsContainer = document.getElementById("quiz-questions");
+  const scoreModal = document.getElementById("scoreModal");
+  const scoreMessage = document.getElementById("scoreMessage");
+  const closeModal = document.querySelector(".close");
 
   function decodeHTMLEntities(text) {
     const textArea = document.createElement("textarea");
@@ -85,10 +88,22 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
       });
 
-      alert(
-        `You have submitted the quiz. Your score is ${correctCount}/${selectedQuestions.length}.`
-      );
+      // Show the modal with the score message
+      scoreMessage.textContent = `You have submitted the quiz. Your score is ${correctCount}/${selectedQuestions.length}.`;
+      scoreModal.style.display = "block";
     });
+
+    // Close the modal when the user clicks on <span> (x)
+    closeModal.onclick = function () {
+      scoreModal.style.display = "none";
+    };
+
+    // Close the modal when the user clicks anywhere outside of the modal
+    window.onclick = function (event) {
+      if (event.target == scoreModal) {
+        scoreModal.style.display = "none";
+      }
+    };
   } catch (error) {
     console.error("Error fetching/rendering questions:", error);
     questionsContainer.innerHTML =

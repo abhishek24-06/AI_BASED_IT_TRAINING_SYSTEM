@@ -1,58 +1,115 @@
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    text-align: center;
-    padding: 30px 0;
-    background-color: #181563;
-    color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  background-color: #181563;
+  color: #fff;
 }
 
 ol {
-    list-style-type: none;
-    /* padding: 10; */
+  list-style-type: none;
+  /* padding: 10; */
 }
 
 li {
-    margin-bottom: 20px;
-    padding: 0;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    /* padding: 10px; */
+  display: block;
+  margin-bottom: 5px;
+  /* padding: 10px; */
 }
 
-button[type='submit'] {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+button[type="submit"] {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-button[type='submit']:hover {
-    background-color: #0056b3;
+button[type="submit"]:hover {
+  background-color: #0056b3;
 }
 
 /* Specific styles for quiz elements */
 p {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-input[type='radio'] {
-    margin-right: 5px;
+input[type="radio"] {
+  margin-right: 5px;
 }
 
 span {
-    font-style: italic;
-    color: #007bff;
+  font-style: italic;
+  color: #007bff;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 500px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#scoreMessage {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #333;
+  font-weight: bold;
 }
